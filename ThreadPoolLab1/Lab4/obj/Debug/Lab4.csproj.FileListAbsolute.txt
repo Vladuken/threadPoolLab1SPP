@@ -1,0 +1,6 @@
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Lab4\bin\Debug\Lab4.exe.config
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Lab4\bin\Debug\Lab4.exe
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Lab4\bin\Debug\Lab4.pdb
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Lab4\obj\Debug\Lab4.csproj.CoreCompileInputs.cache
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Lab4\obj\Debug\Lab4.exe
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Lab4\obj\Debug\Lab4.pdb

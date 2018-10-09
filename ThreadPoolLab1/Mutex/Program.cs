@@ -33,6 +33,10 @@ namespace Mutex
             Random rnd = new Random();
             while (!isGuessed)
             {
+                SetConsoleColor(Thread.CurrentThread.ManagedThreadId);
+
+
+
                 Console.WriteLine();
                 Console.WriteLine("Thread {0} is waiting for mutex...", Thread.CurrentThread.ManagedThreadId);
                 mtx.Lock();
@@ -54,7 +58,17 @@ namespace Mutex
                 mtx.Unlock();
                 Thread.Sleep(1000);
             }
+
+
         }
+
+
+        public static void SetConsoleColor(int a)
+        {
+            Console.BackgroundColor = (ConsoleColor) a;
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+            
 
     }
 }

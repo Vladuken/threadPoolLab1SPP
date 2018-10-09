@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ThreadPoolLab1
 {
-     class FileCopier
+     public class FileCopier
     {
         public static IEnumerable<Tuple<FileInfo,string>> DirectoryCopyWithThreadPool(string sourceDirName, string destDirName, bool copySubDirs)
         {
