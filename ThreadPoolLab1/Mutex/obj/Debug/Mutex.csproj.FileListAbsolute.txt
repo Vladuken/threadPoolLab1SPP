@@ -1,0 +1,7 @@
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\bin\Debug\Mutex.exe.config
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\bin\Debug\Mutex.exe
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\bin\Debug\Mutex.pdb
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\obj\Debug\Mutex.csproj.CoreCompileInputs.cache
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\obj\Debug\Mutex.exe
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\obj\Debug\Mutex.pdb
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\Mutex\obj\Debug\Mutex.csprojAssemblyReference.cache
