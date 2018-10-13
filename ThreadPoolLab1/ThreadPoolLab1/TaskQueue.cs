@@ -73,7 +73,7 @@ namespace ThreadPoolLab1
         {
             taskCount += a;
         }
-
+        List
         public bool IsEmpty()
         {
             return _tasks.Count() == 0;

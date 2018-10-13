@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex", "Mutex\Mutex.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4", "Lab4\Lab4.csproj", "{AC9A6AFD-494F-4901-8318-CF7AEB9E7F90}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab6", "Lab6\Lab6.csproj", "{A551DD68-76FA-4176-ADF6-7190E19DE023}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{AC9A6AFD-494F-4901-8318-CF7AEB9E7F90}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC9A6AFD-494F-4901-8318-CF7AEB9E7F90}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC9A6AFD-494F-4901-8318-CF7AEB9E7F90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A551DD68-76FA-4176-ADF6-7190E19DE023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A551DD68-76FA-4176-ADF6-7190E19DE023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A551DD68-76FA-4176-ADF6-7190E19DE023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A551DD68-76FA-4176-ADF6-7190E19DE023}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
