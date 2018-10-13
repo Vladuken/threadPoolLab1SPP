@@ -12,7 +12,7 @@ namespace Mutex
         {
             secretNumber = new Random().Next() % 10;
             Console.WriteLine("SECRET NUMBER IS {0}", secretNumber);
-
+            
             Thread.Sleep(10);
             mtx = new Mutex();
             StartThreads();
@@ -23,9 +23,12 @@ namespace Mutex
         {
             Thread thr1 = new Thread(guess);
             Thread thr2 = new Thread(guess);
+            Thread thr3 = new Thread(guess);
             thr1.Start();
             Thread.Sleep(100);
             thr2.Start();
+            Thread.Sleep(100);
+            thr3.Start();
         }
 
         public static void guess()
@@ -34,8 +37,6 @@ namespace Mutex
             while (!isGuessed)
             {
                 SetConsoleColor(Thread.CurrentThread.ManagedThreadId);
-
-
 
                 Console.WriteLine();
                 Console.WriteLine("Thread {0} is waiting for mutex...", Thread.CurrentThread.ManagedThreadId);
@@ -58,17 +59,12 @@ namespace Mutex
                 mtx.Unlock();
                 Thread.Sleep(1000);
             }
-
-
         }
-
 
         public static void SetConsoleColor(int a)
         {
             Console.BackgroundColor = (ConsoleColor) a;
             Console.ForegroundColor = ConsoleColor.White;
         }
-            
-
     }
 }

@@ -23,10 +23,9 @@ namespace ThreadPoolLab1
                 return;
             }
 
-
-            TaskQueue taskQueue = new TaskQueue(5);
-
-            foreach (Tuple<FileInfo, string> res in FileCopier.DirectoryCopyWithThreadPool(source_dir,target_dir, true))
+            /*
+            TaskQueue taskQueue = new TaskQueue(4);
+            foreach (Tuple<FileInfo, string> res in FileCopier.DirectoryCopyWithThreadPool(source_dir, target_dir, true))
             {
                 FileInfo file = res.Item1;
                 string path = res.Item2;
@@ -42,29 +41,23 @@ namespace ThreadPoolLab1
                     isRunning = false;
                 }
                 Thread.Sleep(10);
+            } */
+
+            //TaskQueue taskQueue = new TaskQueue(4);
+
+            List<TaskQueue.TaskDelegate> lst = new List<TaskQueue.TaskDelegate>();
+
+            foreach (Tuple<FileInfo, string> res in FileCopier.DirectoryCopyWithThreadPool(source_dir, target_dir, true))
+            {
+                FileInfo file = res.Item1;
+                string path = res.Item2;
+                lst.Add(() => { file.CopyTo(path, true); });
+                //taskQueue.EnqueueTask(() => { file.CopyTo(path, true); });
             }
+
+            Parallel.WaitAll(lst);
 
             System.Console.ReadLine();
-
-            /*
-            for(int i = 0; i < 100; i++)
-            {
-                
-                if (i % 6 <= 3) {
-                    taskQueue.EnqueueTask(Tasks.SleepForSec);
-                }
-                else if(i % 6 == 4)
-                {
-                    taskQueue.EnqueueTask(Tasks.SleepForTenSec);
-                }
-                else
-                {
-                    taskQueue.EnqueueTask(Tasks.Task1);
-                }
-                
-                //taskQueue.EnqueueTask(Tasks.SleepForSec);
-            }
-            */
         }
 
         private static void CheckDirNames(string[] args, out string source, out string dest)

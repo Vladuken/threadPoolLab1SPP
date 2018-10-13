@@ -34,25 +34,20 @@ namespace Lab4
                    
                 }
                 Type[] arr = file.GetTypes();
-                foreach(Type type in file.GetTypes())
+                List<string> a = new List<string>();
+                foreach(Type type in file.GetExportedTypes())
                 {
                     if (type.IsPublic)
                     {
-
-                        MemberInfo[] members = type.GetMembers(BindingFlags.Public
-                                          | BindingFlags.Instance
-                                          | BindingFlags.Static);
-                        //MemberInfo[] members = type.GetMembers(BindingFlags.Default);
-
-                        foreach (MemberInfo member in members)
-                        {
-                            Console.WriteLine(type.FullName + "." + member.Name);
-                        }
-
-                        //System.Console.WriteLine(type.FullName);
+                        a.Add(type.FullName);
                     }
                 }
-
+                a.Sort();
+                foreach(string l in a)
+                {
+                    System.Console.WriteLine(l);
+                }
+                
                 Console.ReadKey();
 
             }

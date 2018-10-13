@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Mutex
 {
-    class Mutex
+    public class Mutex
     {
+    
         private int ID;
 
         public Mutex()

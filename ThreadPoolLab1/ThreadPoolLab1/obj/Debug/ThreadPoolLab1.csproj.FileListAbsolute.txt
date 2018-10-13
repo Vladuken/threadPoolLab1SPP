@@ -4,3 +4,4 @@ C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\ThreadPoolLab1\bin\Debug\
 C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\ThreadPoolLab1\obj\Debug\ThreadPoolLab1.csproj.CoreCompileInputs.cache
 C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\ThreadPoolLab1\obj\Debug\ThreadPoolLab1.exe
 C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\ThreadPoolLab1\obj\Debug\ThreadPoolLab1.pdb
+C:\Users\VLAD\Desktop\threadPoolLab1SPP\ThreadPoolLab1\ThreadPoolLab1\obj\Debug\ThreadPoolLab1.csprojAssemblyReference.cache

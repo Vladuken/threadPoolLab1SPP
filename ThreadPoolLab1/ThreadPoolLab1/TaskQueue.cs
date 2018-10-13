@@ -84,6 +84,14 @@ namespace ThreadPoolLab1
             return taskCount == 0;
         }
 
+        public void WaitAll()
+        {
+            foreach(Thread thread in threads)
+            {
+                thread.Join();
+            }
+        }
+
         public void Dispose()
         {
             foreach(Thread thread in threads)
